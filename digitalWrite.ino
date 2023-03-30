@@ -8,9 +8,10 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  digitalWrite(LED,HIGH);
-  delay(9);
-  digitalWrite(LED,LOW);
-  delay(1);
+  for (int t_high=0;t_high<=10;t_high++){
+    digitalWrite(LED,HIGH);
+    delay(t_high);
+    digitalWrite(LED,LOW);
+    delay(10-t_high);
+  }
 }
